@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Website</title>
+	<meta name="description" content="A modern, responsive landing page">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header class="site-header">
+		<nav class="nav" aria-label="Primary">
+			<a class="nav__brand" href="#home">MySite</a>
+			<button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">☰</button>
+			<ul id="nav-menu" class="nav__menu">
+				<li><a href="#features">Features</a></li>
+				<li><a href="#pricing">Pricing</a></li>
+				<li><a href="#faq">FAQ</a></li>
+				<li><a href="#contact" class="btn btn--sm">Contact</a></li>
+			</ul>
+		</nav>
+		<section id="home" class="hero" aria-labelledby="hero-title">
+			<div class="container">
+				<h1 id="hero-title">Build faster. Launch smarter.</h1>
+				<p class="lead">A lightweight starter you can deploy anywhere. No frameworks required.</p>
+				<div class="hero__cta">
+					<a class="btn" href="#features">Get Started</a>
+					<a class="btn btn--ghost" href="#pricing">See Pricing</a>
+				</div>
+			</div>
+		</section>
+	</header>
+
+	<main>
+		<section id="features" class="section section--alt">
+			<div class="container">
+				<h2>Features</h2>
+				<div class="grid grid--3">
+					<article class="card">
+						<h3>Fast</h3>
+						<p>Zero build step required. Pure HTML, CSS, and JavaScript.</p>
+					</article>
+					<article class="card">
+						<h3>Responsive</h3>
+						<p>Looks great on phones, tablets, and desktops with minimal CSS.</p>
+					</article>
+					<article class="card">
+						<h3>Accessible</h3>
+						<p>Semantic markup, proper contrast, and keyboard-friendly navigation.</p>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section id="pricing" class="section">
+			<div class="container">
+				<h2>Pricing</h2>
+				<div class="pricing">
+					<div class="price-card">
+						<h3>Starter</h3>
+						<p class="price">$0</p>
+						<ul>
+							<li>Basic features</li>
+							<li>Community support</li>
+						</ul>
+						<a class="btn btn--block" href="#contact">Choose</a>
+					</div>
+					<div class="price-card price-card--highlight">
+						<h3>Pro</h3>
+						<p class="price">$12/mo</p>
+						<ul>
+							<li>Everything in Starter</li>
+							<li>Priority support</li>
+							<li>Unlimited projects</li>
+						</ul>
+						<a class="btn btn--block" href="#contact">Get Pro</a>
+					</div>
+					<div class="price-card">
+						<h3>Team</h3>
+						<p class="price">$29/mo</p>
+						<ul>
+							<li>Team features</li>
+							<li>SSO and roles</li>
+						</ul>
+						<a class="btn btn--block" href="#contact">Start Team</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="faq" class="section section--alt">
+			<div class="container">
+				<h2>FAQ</h2>
+				<details>
+					<summary>How do I deploy this?</summary>
+					<p>Serve the `website` folder with any static server or CDN.</p>
+				</details>
+				<details>
+					<summary>Can I use my own styles?</summary>
+					<p>Yes. Edit `styles.css` or replace it entirely.</p>
+				</details>
+			</div>
+		</section>
+	</main>
+
+	<footer id="contact" class="site-footer">
+		<div class="container">
+			<h2>Contact</h2>
+			<form class="contact-form" action="#" method="post">
+				<label for="name">Name</label>
+				<input id="name" name="name" type="text" autocomplete="name" required>
+
+				<label for="email">Email</label>
+				<input id="email" name="email" type="email" autocomplete="email" required>
+
+				<label for="message">Message</label>
+				<textarea id="message" name="message" rows="4" required></textarea>
+
+				<button class="btn" type="submit">Send</button>
+			</form>
+			<p class="legal">© <span id="year"></span> MySite. All rights reserved.</p>
+		</div>
+	</footer>
+
+	<script src="script.js" defer></script>
+</body>
+</html>
