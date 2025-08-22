@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Personal portfolio of Your Name — web developer/designer. Projects, about, and contact.">
+  <title>Your Name — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#home">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="brand">Your<span>Name</span></a>
+
+      <button class="menu-toggle" aria-controls="site-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="menu-icon">☰</span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#projects">Projects</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <h1 id="hero-title" class="hero-title">Hi, I’m <span class="accent">Your Name</span>.<br> I build modern web experiences.</h1>
+        <p class="hero-subtitle">Front‑end developer focused on accessible, performant, and delightful products.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">View Projects</a>
+          <a class="btn btn-ghost" href="#contact">Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="container">
+        <h2 id="about-title" class="section-title">About</h2>
+        <p class="section-text">I’m a developer who loves crafting clean UIs and robust architecture. I enjoy working with modern web technologies and turning ideas into real products.</p>
+        <ul class="skills-list">
+          <li class="chip">HTML</li>
+          <li class="chip">CSS</li>
+          <li class="chip">JavaScript</li>
+          <li class="chip">TypeScript</li>
+          <li class="chip">React</li>
+          <li class="chip">Node.js</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects" class="section" aria-labelledby="projects-title">
+      <div class="container">
+        <h2 id="projects-title" class="section-title">Projects</h2>
+        <div class="projects">
+          <article class="project-card">
+            <div class="project-body">
+              <h3 class="project-title">Project One</h3>
+              <p class="project-desc">A brief description of your project highlighting goals and outcomes.</p>
+              <ul class="project-tags">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+            <div class="project-actions">
+              <a class="link" href="#" target="_blank" rel="noopener">Live</a>
+              <a class="link" href="#" target="_blank" rel="noopener">Code</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-body">
+              <h3 class="project-title">Project Two</h3>
+              <p class="project-desc">Explain what makes this project interesting and what you learned.</p>
+              <ul class="project-tags">
+                <li>API</li>
+                <li>UI</li>
+                <li>Performance</li>
+              </ul>
+            </div>
+            <div class="project-actions">
+              <a class="link" href="#" target="_blank" rel="noopener">Live</a>
+              <a class="link" href="#" target="_blank" rel="noopener">Code</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-body">
+              <h3 class="project-title">Project Three</h3>
+              <p class="project-desc">Summarize the challenge and the solution you implemented.</p>
+              <ul class="project-tags">
+                <li>UX</li>
+                <li>Animations</li>
+                <li>Accessibility</li>
+              </ul>
+            </div>
+            <div class="project-actions">
+              <a class="link" href="#" target="_blank" rel="noopener">Live</a>
+              <a class="link" href="#" target="_blank" rel="noopener">Code</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 id="contact-title" class="section-title">Contact</h2>
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="form-field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Jane Doe" required>
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="jane@example.com" required>
+          </div>
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Hi! I'd love to discuss..." required></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Send Message</button>
+          <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Your Name. All rights reserved.</p>
+      <div class="footer-links">
+        <a class="link" href="#about">About</a>
+        <a class="link" href="#projects">Projects</a>
+        <a class="link" href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
