@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Modern responsive portfolio website" />
+  <meta name="theme-color" content="#0ea5e9" />
+  <title>My Portfolio</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container nav-container">
+      <a href="#top" class="brand" aria-label="Homepage">
+        <span class="brand-mark" aria-hidden="true">◆</span>
+        <span class="brand-text">Your Name</span>
+      </a>
+
+      <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="bar" aria-hidden="true"></span>
+        <span class="bar" aria-hidden="true"></span>
+        <span class="bar" aria-hidden="true"></span>
+      </button>
+
+      <nav class="primary-nav" aria-label="Primary" id="primary-navigation">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="section hero" id="hero">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <p class="eyebrow">Designer • Developer • Problem Solver</p>
+          <h1 class="hero-title">
+            Building thoughtful web experiences with
+            <span class="accent">clean code</span> and
+            <span class="accent">modern design</span>.
+          </h1>
+          <p class="hero-subtitle">I craft responsive, accessible, and performant products using HTML, CSS, and JavaScript.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-ghost" href="#contact">Get in Touch</a>
+          </div>
+        </div>
+        <div class="hero-media" aria-hidden="true">
+          <div class="shape shape-a"></div>
+          <div class="shape shape-b"></div>
+          <div class="shape shape-c"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container split">
+        <div class="about-media" aria-hidden="true">
+          <div class="avatar"></div>
+        </div>
+        <div class="about-content">
+          <h2 class="section-title">About Me</h2>
+          <p>
+            I'm a front‑end developer focused on turning ideas into delightful web
+            experiences. I enjoy working with semantic HTML, modern CSS (Flexbox/Grid),
+            and progressive enhancement.
+          </p>
+          <p>
+            My work emphasizes clarity, accessibility, and maintainability. When I'm not
+            building, I study design systems and tinker with micro‑interactions.
+          </p>
+          <ul class="skills">
+            <li>HTML5</li>
+            <li>CSS3 / Flexbox / Grid</li>
+            <li>JavaScript (ES6+)</li>
+            <li>Accessibility (a11y)</li>
+            <li>Responsive Design</li>
+            <li>Performance</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-lead">A few recent things I've built.</p>
+        <div class="projects-grid">
+          <article class="card">
+            <div class="card-media"></div>
+            <div class="card-body">
+              <h3 class="card-title">Project One</h3>
+              <p class="card-text">A clean landing page with responsive layout and smooth interactions.</p>
+              <div class="card-tags">
+                <span>HTML</span><span>CSS</span><span>JS</span>
+              </div>
+              <div class="card-actions">
+                <a href="#" class="text-link" aria-label="Project One live demo">Live</a>
+                <a href="#" class="text-link" aria-label="Project One source code">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-media"></div>
+            <div class="card-body">
+              <h3 class="card-title">Project Two</h3>
+              <p class="card-text">A dashboard UI with cards, charts, and delightful micro‑interactions.</p>
+              <div class="card-tags">
+                <span>UI</span><span>CSS Grid</span><span>JS</span>
+              </div>
+              <div class="card-actions">
+                <a href="#" class="text-link" aria-label="Project Two live demo">Live</a>
+                <a href="#" class="text-link" aria-label="Project Two source code">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-media"></div>
+            <div class="card-body">
+              <h3 class="card-title">Project Three</h3>
+              <p class="card-text">A minimal blog template with typography and accessibility in mind.</p>
+              <div class="card-tags">
+                <span>Typography</span><span>A11y</span><span>Performance</span>
+              </div>
+              <div class="card-actions">
+                <a href="#" class="text-link" aria-label="Project Three live demo">Live</a>
+                <a href="#" class="text-link" aria-label="Project Three source code">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-media"></div>
+            <div class="card-body">
+              <h3 class="card-title">Project Four</h3>
+              <p class="card-text">A mobile‑first ecommerce concept built with semantic HTML and CSS.</p>
+              <div class="card-tags">
+                <span>Responsive</span><span>Flexbox</span><span>UX</span>
+              </div>
+              <div class="card-actions">
+                <a href="#" class="text-link" aria-label="Project Four live demo">Live</a>
+                <a href="#" class="text-link" aria-label="Project Four source code">Code</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container narrow">
+        <h2 class="section-title">Contact</h2>
+        <p class="section-lead">Have a question, project, or just want to say hi?</p>
+        <form id="contact-form" novalidate>
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Jane Doe" autocomplete="name" required />
+              <p class="input-hint" data-for="name"></p>
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="jane@example.com" autocomplete="email" required />
+              <p class="input-hint" data-for="email"></p>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me a bit about your idea…" required></textarea>
+            <p class="input-hint" data-for="message"></p>
+          </div>
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit">Send Message</button>
+            <span class="form-status" role="status" aria-live="polite"></span>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Your Name. All rights reserved.</p>
+      <div class="social">
+        <a href="#" aria-label="Twitter" class="text-link">Twitter</a>
+        <a href="#" aria-label="GitHub" class="text-link">GitHub</a>
+        <a href="#" aria-label="LinkedIn" class="text-link">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
